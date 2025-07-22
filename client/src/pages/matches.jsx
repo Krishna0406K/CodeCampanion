@@ -21,7 +21,7 @@ const CrossPlatformMatch = () => {
         return;
       }
       try {
-        const res = await axios.post("http://localhost:3000/api/match/find  ", {
+        const res = await axios.post("https://codecampanion.onrender.com  ", {
           name, tags
         });
         setMatches(res.data);
