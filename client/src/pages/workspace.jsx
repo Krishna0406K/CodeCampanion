@@ -18,7 +18,7 @@ function CodingProblemsPage() {
 
   const getProblems = async () => {
     await axios
-      .get("http://localhost:3000/api/problemSet/problems")
+      .get("https://codecampanion.onrender.com")
       .then(res => setProblem(res.data))
       .catch(err => console.error("Error fetching problems:", err));
   };
