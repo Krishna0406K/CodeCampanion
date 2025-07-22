@@ -14,7 +14,7 @@ const Login = () => {
   const [email, setEmail] = useState()
   const [password, setPassword] = useState()
   const handleSubmit = () =>{
-    axios.post('http://localhost:3000/api/users/login', {email, password}).
+    axios.post('https://codecampanion.onrender.com', {email, password}).
     then(
       navigate('/home'))
     .catch(error => console.log(error))
