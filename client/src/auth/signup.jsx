@@ -14,7 +14,7 @@ const Signup = () => {
     e.preventDefault();
       console.log("Sending Data:", { name, email, password });
     axios.post(
-        "http://localhost:3000/api/users/register",
+        "https://codecampanion.onrender.com",
         {
           name,
           email,
