@@ -15,7 +15,7 @@
       const getSolution = useCallback(async () => {
         setLoading(true);
         try {
-          const res = await axios.post("http://localhost:3000/api/explain/generate", {
+          const res = await axios.post("https://codecampanion.onrender.com", {
             name,
             tags,
             platform: "Codeforces"
