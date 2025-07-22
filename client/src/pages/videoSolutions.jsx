@@ -16,7 +16,7 @@ const YouTubeVideoTutorials = () => {
         return;
       }
       try {
-        const res = await axios.post("http://localhost:3000/api/youtube/search  ", {
+        const res = await axios.post("https://codecampanion.onrender.com  ", {
           name
         });
         setVideos(res.data.videos);
